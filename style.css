@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
 .contenair{
     width: 100%;
     height: 80vh;
@@ -17,7 +22,7 @@
 }
 
 .icon-download{
-    width: 400px;
+    width: 40%;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -30,19 +35,24 @@
 
 @media screen and (max-width: 412px ){
     .icon-download{
-        width: 350px;
+        width: 90%;
         height: 300px;
+    }
+
+    .paragraph{
+        font-size: 16px;
     }
 }
 
 .paragraph{
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .emoji{
-    padding-bottom: 20px;
+    margin-bottom: 1.5rem;
     font-size: 20px;
 }
 
@@ -51,7 +61,7 @@
     color: rgb(115, 91, 255);
     font-size: 30px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .4s ease-out;
 }
 
 .icon-download a:hover, .developper a:hover{
@@ -62,10 +72,12 @@
 .developper {
     padding-top: 20px;
     font-size: 20px;
+    text-align: center;
 }
 
 .developper a{
     text-decoration: none;
     color: rgb(115, 91, 255);
-    font-family: 'Roboto', sans-serif;
+    transition: .4s ease-out;
+
 }
